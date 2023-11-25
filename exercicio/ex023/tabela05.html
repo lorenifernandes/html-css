@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        col.nome {
+            background-color: aqua;
+        }
+        
+        col.sexo {
+            background-color: rgba(255, 0, 0, 0.534);
+        }
+        
+        col.idade {
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="Profissao">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+
+</html>
